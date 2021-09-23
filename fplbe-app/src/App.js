@@ -35,22 +35,29 @@ function App() {
         <switch>
           <Route path="/profile">
             <h1>Profil nih bos</h1>
-            {user && user.ticker && user.ticker.base}
+            Base : {user && user.ticker && user.ticker.base}
             <br />
-            {user && user.ticker && user.ticker.target}
+            Target : {user && user.ticker && user.ticker.target}
             <br />
-            {user && user.ticker && user.ticker.price}
+            Price : {user && user.ticker && user.ticker.price}
             <br />
-            {user && user.ticker && user.ticker.volume}
+            Volume : {user && user.ticker && user.ticker.volume}
             <br />
-            {user && user.ticker && user.ticker.change}
+            Change : {user && user.ticker && user.ticker.change}
             <br />
           </Route>
           <Route path="/home">
             <h1>Home nih bos</h1>
+            {user &&
+              user.ticker &&
+              user.ticker.markets &&
+              user.ticker.markets.map((item) => {
+                return <p> {item.price} </p>;
+              })}
           </Route>
           <Route path="/about">
             <h1>About nih bos</h1>
+            Change : {user && user.ticker && user.ticker.timestamp}
           </Route>
         </switch>
       </BrowserRouter>
