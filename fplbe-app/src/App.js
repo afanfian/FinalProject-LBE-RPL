@@ -25,6 +25,7 @@ function App() {
   console.log(user);
   return (
     <div className="App">
+      <h1>Selamat Datang di Website Crypto Kami</h1>
       <BrowserRouter>
         <Link to="/profile">Profil nih bos</Link>
         <br />
@@ -35,6 +36,10 @@ function App() {
         <switch>
           <Route path="/profile">
             <h1>Profil nih bos</h1>
+            <h1>Ini nanti isi profil kita mal</h1>
+          </Route>
+          <Route path="/home">
+            <h1>Home nih bos</h1>
             Base : {user && user.ticker && user.ticker.base}
             <br />
             Target : {user && user.ticker && user.ticker.target}
@@ -45,19 +50,33 @@ function App() {
             <br />
             Change : {user && user.ticker && user.ticker.change}
             <br />
+            Change : {user && user.timestamp}
+            <br />
+            Success : {user && user.success}
+            <h3>Market</h3>
           </Route>
-          <Route path="/home">
-            <h1>Home nih bos</h1>
+          <Route path="/about">
+            <h1>About nih bos</h1>
+            {user &&
+              user.ticker &&
+              user.ticker.markets &&
+              user.ticker.markets.map((item) => {
+                return <p> {item.market} </p>;
+              })}
+            <h3>Price</h3>
             {user &&
               user.ticker &&
               user.ticker.markets &&
               user.ticker.markets.map((item) => {
                 return <p> {item.price} </p>;
               })}
-          </Route>
-          <Route path="/about">
-            <h1>About nih bos</h1>
-            Change : {user && user.ticker && user.ticker.timestamp}
+            <h3>Volume</h3>
+            {user &&
+              user.ticker &&
+              user.ticker.markets &&
+              user.ticker.markets.map((item) => {
+                return <p> {item.volume} </p>;
+              })}
           </Route>
         </switch>
       </BrowserRouter>
