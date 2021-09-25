@@ -1,3 +1,19 @@
+/* all the fonts */
+@import url("https://fonts.googleapis.com/css2?family=Cuprum:wght@500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap");
+
+/* regular setup */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+body {
+  background: white;
+}
+
 .App {
   text-align: center;
 }
@@ -14,14 +30,42 @@
 }
 
 .App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
   display: flex;
-  flex-direction: column;
+  justify-content: space-between;
   align-items: center;
+  transition: 0.6s;
+  z-index: 1000;
+  padding: 40px 100px;
+}
+
+.App ul {
+  position: relative;
+  display: flex;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
+}
+
+.App ul li {
+  position: relative;
+  list-style: none;
+  text-decoration: none;
+  padding: 7px 30px;
+  color: rgb(0, 0, 0);
+  font-family: "Cuprum";
+  border-radius: 20px;
+  letter-spacing: px;
+  font-weight: 500px;
+  transition: 0.7s;
+}
+
+header ul li :hover {
+  background: white;
+  color: black;
+  transition: 0.7s;
 }
 
 .App-link {
