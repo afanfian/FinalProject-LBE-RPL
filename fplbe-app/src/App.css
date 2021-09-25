@@ -36,3 +36,15 @@
     transform: rotate(360deg);
   }
 }
+/*Class Profile */
+.profil {
+  background-color: aqua;
+}
+/*Class Trading */
+.trading {
+  background-color: aqua;
+}
+/*Class Markets */
+.marketsmal {
+  background-color: aqua;
+}

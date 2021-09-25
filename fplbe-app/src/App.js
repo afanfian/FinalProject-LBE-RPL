@@ -27,68 +27,69 @@ function App() {
     <div className="App">
       <h1>Selamat Datang di Website Crypto Kami</h1>
       <BrowserRouter>
-        <div className="profil">
-          <Link to="/profile">Profil</Link>
-        </div>
+        <Link to="/profile">Profil</Link>
+
         <br />
-        <div className="trading">
-          <Link to="/home">Trading</Link>
-        </div>
+        <Link to="/home">Trading</Link>
         <br />
-        <div className="marketsmal">
-          <Link to="/about">Markets</Link>
-        </div>
+        <Link to="/about">Markets</Link>
         <br />
         <switch>
           <Route path="/profile">
-            <h1>Ini nanti isi profil kita mal</h1>
+            <div className="profil">
+              <h1>Ini nanti isi profil kita mal</h1>
+            </div>
           </Route>
           <Route path="/home">
-            <br />
-            Base : {user && user.ticker && user.ticker.base}
-            <br />
-            <br />
-            Target : {user && user.ticker && user.ticker.target}
-            <br />
-            <br />
-            Price : {user && user.ticker && user.ticker.price}
-            <br />
-            <br />
-            Volume : {user && user.ticker && user.ticker.volume}
-            <br />
-            <br />
-            Change : {user && user.ticker && user.ticker.change}
-            <br />
-            <br />
-            Change : {user && user.timestamp}
-            <br />
-            <br />
-            Success : {user && user.success}
-            <br />
-            <br />
-            Error : {user && user.error}
+            <div className="trading">
+              <br />
+              Base : {user && user.ticker && user.ticker.base}
+              <br />
+              <br />
+              Target : {user && user.ticker && user.ticker.target}
+              <br />
+              <br />
+              Price : {user && user.ticker && user.ticker.price}
+              <br />
+              <br />
+              Volume : {user && user.ticker && user.ticker.volume}
+              <br />
+              <br />
+              Change : {user && user.ticker && user.ticker.change}
+              <br />
+              <br />
+              Change : {user && user.timestamp}
+              <br />
+              <br />
+              Success : {user && user.success}
+              <br />
+              <br />
+              Error : {user && user.error}
+            </div>
           </Route>
           <Route path="/about">
-            {user &&
-              user.ticker &&
-              user.ticker.markets &&
-              user.ticker.markets.map((item) => {
-                return <p> {item.market} </p>;
-              })}
-            <h3>Price</h3>
-            {user &&
-              user.ticker &&
-              user.ticker.markets &&
-              user.ticker.markets.map((item) => {
-                return <p> {item.price} </p>;
-              })}
-            <h3>Volume</h3>
-            {user &&
-              user.ticker &&
-              user.ticker.markets &&
-              user.ticker.markets.map((item) => {
-                return <p> {item.volume} </p>;
-              })}
+            <div className="marketsmal">
+              {user &&
+                user.ticker &&
+                user.ticker.markets &&
+                user.ticker.markets.map((item) => {
+                  return <p> {item.market} </p>;
+                })}
+              <h3>Price</h3>
+              {user &&
+                user.ticker &&
+                user.ticker.markets &&
+                user.ticker.markets.map((item) => {
+                  return <p> {item.price} </p>;
+                })}
+              <h3>Volume</h3>
+              {user &&
+                user.ticker &&
+                user.ticker.markets &&
+                user.ticker.markets.map((item) => {
+                  return <p> {item.volume} </p>;
+                })}
+            </div>
           </Route>
         </switch>
       </BrowserRouter>
