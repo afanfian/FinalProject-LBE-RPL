@@ -27,17 +27,17 @@ function App() {
     <div className="App">
       <h1>Selamat Datang di Website Crypto Kami</h1>
       <BrowserRouter>
-        <Link to="/profile" className="profil">
-          Profil
-        </Link>
+        <div className="profil">
+          <Link to="/profile">Profil</Link>
+        </div>
         <br />
-        <Link to="/home" className="trading">
-          Trading
-        </Link>
+        <div className="trading">
+          <Link to="/home">Trading</Link>
+        </div>
         <br />
-        <Link to="/about" className="marketsmal">
-          Markets
-        </Link>
+        <div className="marketsmal">
+          <Link to="/about">Markets</Link>
+        </div>
         <br />
         <switch>
           <Route path="/profile">
