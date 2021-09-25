@@ -27,36 +27,48 @@ function App() {
     <div className="App">
       <h1>Selamat Datang di Website Crypto Kami</h1>
       <BrowserRouter>
-        <Link to="/profile">Profil nih bos</Link>
+        <Link to="/profile" className="profil">
+          Profil
+        </Link>
         <br />
-        <Link to="/home">Home nih bos</Link>
+        <Link to="/home" className="trading">
+          Trading
+        </Link>
         <br />
-        <Link to="/about">About nih bos</Link>
+        <Link to="/about" className="marketsmal">
+          Markets
+        </Link>
         <br />
         <switch>
           <Route path="/profile">
-            <h1>Profil nih bos</h1>
             <h1>Ini nanti isi profil kita mal</h1>
           </Route>
           <Route path="/home">
-            <h1>Home nih bos</h1>
+            <br />
             Base : {user && user.ticker && user.ticker.base}
+            <br />
             <br />
             Target : {user && user.ticker && user.ticker.target}
             <br />
+            <br />
             Price : {user && user.ticker && user.ticker.price}
+            <br />
             <br />
             Volume : {user && user.ticker && user.ticker.volume}
             <br />
+            <br />
             Change : {user && user.ticker && user.ticker.change}
+            <br />
             <br />
             Change : {user && user.timestamp}
             <br />
+            <br />
             Success : {user && user.success}
-            <h3>Market</h3>
+            <br />
+            <br />
+            Error : {user && user.error}
           </Route>
           <Route path="/about">
-            <h1>About nih bos</h1>
             {user &&
               user.ticker &&
               user.ticker.markets &&
