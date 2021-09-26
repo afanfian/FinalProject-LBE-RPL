@@ -34,8 +34,21 @@ function App() {
       </ul>
         <switch>
           <Route path="/profile">
-            <div className="profil">
-              <h1>Ini nanti isi profil kita mal</h1>
+            <div className="profil-1">
+            <h4>Name</h4>
+            <p>Afan </p>
+            <h4>Adress</h4>
+            <p>Jln. bla bla</p>
+            <h4>Contact</h4>
+            <p>090129012</p>
+            </div>
+            <div className="profil-2">
+            <h4>Name</h4>
+            <p>Akmal</p>
+            <h4>Adress</h4>
+            <p>Jln. bla bla</p>
+            <h4>Contact</h4>
+            <p>090129012</p>
             </div>
           </Route>
           <Route path="/home">
@@ -92,6 +105,9 @@ function App() {
         </switch>
       </BrowserRouter>
     </div>
+    
+    
+    
   );
   //eror = karena akses belom punya apa2
   //{user && user.ticker && user.ticker.base}

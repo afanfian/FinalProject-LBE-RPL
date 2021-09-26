@@ -42,6 +42,13 @@ body {
   padding: 40px 100px;
 }
 
+.App h1 {
+  position: relative;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+}
+
 .App ul {
   position: relative;
   display: flex;
@@ -83,6 +90,45 @@ header ul li :hover {
 /*Class Profile */
 .profil {
   background-color: aqua;
+}
+.profil-1 {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  background: #f7f7f7;
+  border-radius: 5px;
+  padding: 60px 30px;
+  margin: 30px;
+  margin: auto;
+  max-width: 400px;
+  padding-bottom: 50px;
+  color: #696969;
+}
+.profil-1 p {
+  ont-family: "Quicksand";
+  color: #545454;
+}
+
+.profil-1 h4 {
+  padding-top: 10px;
+}
+
+.profil-2 {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  background: #f7f7f7;
+  border-radius: 5px;
+  padding: 60px 30px;
+  margin: 30px;
+  margin: auto;
+  max-width: 400px;
+  padding-bottom: 50px;
+  color: #696969;
+}
+.profil-2 p {
+  ont-family: "Quicksand";
+  color: #545454;
+}
+
+.profil-2 h4 {
+  padding-top: 10px;
 }
 /*Class Trading */
 .trading {
