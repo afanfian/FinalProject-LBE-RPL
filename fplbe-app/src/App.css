@@ -45,7 +45,7 @@ body {
 .App h1 {
   position: relative;
   display: flex;
-  justify-content: left;
+  justify-content: center;
   align-items: center;
 }
 
@@ -103,7 +103,7 @@ header ul li :hover {
   color: #696969;
 }
 .profil-1 p {
-  ont-family: "Quicksand";
+  font-family: "Quicksand";
   color: #545454;
 }
 
@@ -123,7 +123,7 @@ header ul li :hover {
   color: #696969;
 }
 .profil-2 p {
-  ont-family: "Quicksand";
+  font-family: "Quicksand";
   color: #545454;
 }
 

@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import { BrowserRouter, Switch, Route, Link } from "react-router-dom";
+import fian from "../public/Fian.png";
 // BrowserRouter : Sebagai komponen yang akan membungkus aplikasi
 // Route : Didalam route ada komponen
 // Switch : Membungkus didalamnya ada route
@@ -27,31 +28,39 @@ function App() {
     <div className="App">
       <h1>Selamat Datang di Website Crypto Kami</h1>
       <BrowserRouter>
-      <ul>
-        <li><Link to="/profile">Profil</Link></li> 
-        <li><Link to="/home">Trading</Link></li>
-        <li><Link to="/about">Markets</Link></li>
-      </ul>
+        <ul>
+          <li>
+            <Link to="/profile">Profil</Link>
+          </li>
+          <li>
+            <Link to="/trading">Trading</Link>
+          </li>
+          <li>
+            <Link to="/markets">Markets</Link>
+          </li>
+        </ul>
         <switch>
           <Route path="/profile">
             <div className="profil-1">
-            <h4>Name</h4>
-            <p>Afan </p>
-            <h4>Adress</h4>
-            <p>Jln. bla bla</p>
-            <h4>Contact</h4>
-            <p>090129012</p>
+              <h4>Name</h4>
+              <p>Fian Awamiry Maulana </p>
+              <h4>Adress</h4>
+              <p>Perumahan Wonorejo Indah Blok Q.04 RT/RW 40/15, Kecamatan Kedujajang, Kabupaten Lumajang, Jawa Timur</p>
+              <h4>Contact</h4>
+              <p>089515776243</p>
+              <h4>LinkedIn</h4>
+              <p>Fian Awamiry Maulana</p>
             </div>
             <div className="profil-2">
-            <h4>Name</h4>
-            <p>Akmal</p>
-            <h4>Adress</h4>
-            <p>Jln. bla bla</p>
-            <h4>Contact</h4>
-            <p>090129012</p>
+              <h4>Name</h4>
+              <p>Akmal</p>
+              <h4>Adress</h4>
+              <p>Jln. bla bla</p>
+              <h4>Contact</h4>
+              <p>090129012</p>
             </div>
           </Route>
-          <Route path="/home">
+          <Route path="/trading">
             <div className="trading">
               <br />
               Base : {user && user.ticker && user.ticker.base}
@@ -78,7 +87,7 @@ function App() {
               Error : {user && user.error}
             </div>
           </Route>
-          <Route path="/about">
+          <Route path="/markets">
             <div className="marketsmal">
               {user &&
                 user.ticker &&
@@ -105,9 +114,6 @@ function App() {
         </switch>
       </BrowserRouter>
     </div>
-    
-    
-    
   );
   //eror = karena akses belom punya apa2
   //{user && user.ticker && user.ticker.base}
