@@ -80,6 +80,7 @@ function App() {
               <br />
               Error : {user && user.error}
             </div>
+           
           </Route>
           <Route path="/markets">
             <div className="marketsmal">
@@ -90,6 +91,7 @@ function App() {
                 user.ticker.markets.map((item) => {
                   return <p> {item.market} </p>;
                 })}
+                 <br />
               <h3>Price</h3>
               {user &&
                 user.ticker &&
@@ -97,6 +99,7 @@ function App() {
                 user.ticker.markets.map((item) => {
                   return <p> {item.price} </p>;
                 })}
+                 <br />
               <h3>Volume</h3>
               {user &&
                 user.ticker &&

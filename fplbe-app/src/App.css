@@ -11,7 +11,11 @@
 }
 
 body {
-  background: linear-gradient(90deg, rgba(48, 16, 255, 1) 0%, rgba(100, 115, 255, 1) 100%);
+  background: linear-gradient(
+    90deg,
+    rgba(48, 16, 255, 1) 0%,
+    rgba(100, 115, 255, 1) 100%
+  );
 }
 
 .App {
@@ -143,11 +147,30 @@ header ul li :hover {
 }
 /*Class Trading */
 .trading {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5);
+  background: #f7f7f7;
+  border-radius: 5px;
+  padding: 60px 30px;
+  margin: 30px;
+  margin: auto;
+  max-width: 400px;
+  padding-bottom: 50px;
+  color: #696969;
   background-color: rgb(255, 255, 255);
 }
 /*Class Markets */
 .marketsmal {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5);
+  background: #f7f7f7;
+  border-radius: 5px;
+  padding: 60px 30px;
+  margin: 30px;
+  margin: auto;
+  max-width: 400px;
+  padding-bottom: 50px;
+  color: #696969;
   background-color: rgb(255, 255, 255);
+  line-height: 1.6;
 }
 
 .marketsmal-volume {
