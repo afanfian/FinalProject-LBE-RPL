@@ -1,6 +1,5 @@
 import { useEffect, useState } from "react";
 import { BrowserRouter, Switch, Route, Link } from "react-router-dom";
-import fian from "../public/Fian.png";
 // BrowserRouter : Sebagai komponen yang akan membungkus aplikasi
 // Route : Didalam route ada komponen
 // Switch : Membungkus didalamnya ada route
@@ -51,13 +50,16 @@ function App() {
               <h4>LinkedIn</h4>
               <p>Fian Awamiry Maulana</p>
             </div>
+            <br/>
             <div className="profil-2">
               <h4>Name</h4>
-              <p>Akmal</p>
+              <p>Muhammad Akmal Rishwanda</p>
               <h4>Adress</h4>
-              <p>Jln. bla bla</p>
+              <p>Jln. Dr Wahidin Sudirohusodo Gresik Jawa timur</p>
               <h4>Contact</h4>
-              <p>090129012</p>
+              <p>081217441330</p>
+              <h4>LinkedIn</h4>
+              <p>Muhammad Akmal Rishwanda</p>
             </div>
           </Route>
           <Route path="/trading">

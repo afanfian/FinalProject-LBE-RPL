@@ -11,10 +11,24 @@
 }
 
 body {
-  background: white;
+  background: linear-gradient(
+    90deg,
+    rgba(48, 16, 255, 1) 0%,
+    rgba(100, 115, 255, 1) 100%
+  );
 }
 
 .App {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  width: 600px;
+  min-height: 600px;
+  background: #2098cf;
+  text-align: center;
+  margin: 128px auto;
+  border-radius: 20px;
+  padding-bottom: 32px;
   text-align: center;
 }
 
@@ -43,10 +57,11 @@ body {
 }
 
 .App h1 {
-  position: relative;
+  position: static;
   display: flex;
   justify-content: center;
   align-items: center;
+  color: aliceblue;
 }
 
 .App ul {
@@ -71,7 +86,7 @@ body {
 
 header ul li :hover {
   background: white;
-  color: black;
+  color: rgb(214, 33, 33);
   transition: 0.7s;
 }
 
@@ -137,4 +152,8 @@ header ul li :hover {
 /*Class Markets */
 .marketsmal {
   background-color: aqua;
+}
+
+.marketsmal-volume {
+  width: 155px;
 }
